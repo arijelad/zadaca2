@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1><%= title %></h1>
+<table>
+    <tr>
+        <th>Redni broj</th>
+        <th>Cinjenica</th>
+    </tr>
+    <%for(let i = 0;i<facts.length;i++) {%>
+    <tr>
+        <th><%=i+1%>.</th>
+        <th><h5><%=facts[i]%></h5></th>
+    </tr>
+    <%}%>
+
+</table>
+
+
+</body>
+</html>
